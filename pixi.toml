@@ -1,0 +1,18 @@
+[project]
+authors = ["Nick Ulle <nick.ulle@gmail.com>"]
+channels = ["conda-forge"]
+description = "A demo of how to package Python code."
+name = "python-packaging-demo"
+platforms = ["linux-64", "osx-64", "win-64"]
+version = "0.1.0"
+
+[tasks]
+build = { cmd = "jupyter-book build .", description = "Build the reader." }
+publish = { cmd = "ghp-import --no-jekyll --no-history --push _build/html", description = "Publish the reader to the `gh-pages` branch on GitHub." }
+clean = { cmd = "rm -rf _build/", description = "Remove the build directory." }
+rebuild = { depends-on = ["clean", "build"], description = "Remove the build directory and build the reader." }
+
+[dependencies]
+python = ">=3.12.0,<3.13"
+jupyter-book = ">=1.0.3,<1.1"
+ghp-import = ">=2.1.0,<3"

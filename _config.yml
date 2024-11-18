@@ -4,7 +4,7 @@
 title: Python Packaging Demo
 author: Nick Ulle
 copyright: "2024"
-  #logo: img/datalab-logo-full-color-rgb-1.png
+exclude_patterns: [_build, .pixi]
 only_build_toc_files: true
 
 # Force re-execution of notebooks on each build.
@@ -24,7 +24,7 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/ucdavisdatalab/<YOUR REPO>
+  url: https://github.com/d-pug/python_packaging_demo
   path_to_book: docs
 
 # Add GitHub buttons to your book
@@ -51,4 +51,3 @@ parse:
     - html_image
     - linkify
     - substitution
-
