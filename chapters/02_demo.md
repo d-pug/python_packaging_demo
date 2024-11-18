@@ -1,5 +1,5 @@
-Python Packaging Demo
-=====================
+(sec-python-packaging)=
+# Python Packaging
 
 Why package your code?
 
