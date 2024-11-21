@@ -4,7 +4,7 @@
 
 _Maintainer: Nick Ulle <<naulle@ucdavis.edu>>_  
 
-* [Reader](https://nick-ulle.github.io/python_packaging_demo/)
+* [Reader](https://d-pug.github.io/python_packaging_demo/)
 
 
 ## Contributing
